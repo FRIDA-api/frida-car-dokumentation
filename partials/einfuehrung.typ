@@ -1,0 +1,3 @@
+= Einführung
+
+FRIDA, kurz für Free Insurance Data Initiative, ist eine Open Insurance Initiative, die die Schaffung von OPEN API Standards beim Austausch von Versicherungsdaten zum Ziel hat. Der FRIDA Use Case Car Claims regelt den Datenaustausch zu Vertrags- und Schadendaten in der Kfz-Versicherung. Dieses Dokument beschreibt die Vertrags-API, die für den Datenaustausch der Vertragsdaten mit einer Wallet-Lösung im Smartphone des Kunden verwendet wird und die Schaden-API, die den Datenaustausch zwischen dem VN und dem Geschädigten mit Versicherern oder Dienstleistern regelt. Beide APIs, genannt Insurance-Policy-Cards-API und Car-Claims-API, werden in den folgenden Kapiteln erklärt,
