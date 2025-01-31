@@ -6,30 +6,31 @@
 
 Beinhaltet alle nötigen Information zur Verwaltung einer digitalen Versicherten Karte. Es handelt sich um eine Map, somit sind die Attributnamen frei wählbar und müssen nicht unbedingt den Angegebenden gleichen. Die Attribute dienen als Beispiel der benötigten Information für die Versicherten-Karte im Kfz-Versicherungskontext. 
 
-#parameterTable(
-  (
-  "additionalServices", "string", "Optional", "Zusätzliche Services im Versicherungsvertrag",
-  "coverage", "string", "Optional", "Abdeckung im Versicherungsvertrag, zum Beispiel Kfz-Vollkasko (1.000,- € SB) und Kfz-Teilkasko (150,- € SB) ",
-  "firstName", "string", "Pflicht", "Vorname",
-  "lastName", "string", "Pflicht", "Nachname",
-  "makeModel", "string", "Optional", "Fahrzeug Modell",
-  "mileage", "string", "Optinal", "Kilometerstand des Fahrzeugs",
-  "ncb", "string", "Optional", "Schadensfreiheitklasse",
-  "policyNumber", "string", "Pflicht", "Versicherungsnummer",
-  "regDate", "string", "Optional", "Anmeldungsdatum des Fahrzeugs",
-  "title", "string", "Pflicht", "Titel des Kunden",
-  "vehicleReg", "string", "Optional", "Kennzeichen des Fahrzeugs",
-  "vin", "string", "Optional", "Fahrzeug-Identifizierungsnummer",
-  "genericString", "string", "Optional", "Ein beliebiger Stringwert. Attributname kann frei gewählt werden.",
-  "genericBoolean", "boolean", "Optional", "Ein beliebiger Boolean Wert. Attributname kann freigewählt werden.",
-  "genericNumber", "number", "Optional", "Eine beliebige Nummer. Attributname kann frei gewählt werden.",
-  "email", "string", "Optional", "Verwendete Email für die Verteilung",
-  "hasProtectionLetter", "boolean", "Optional", "Wert ob der Vertrag ein Schutzbrief beinhaltet",
-  "productName", "string", "Optional", "Produktname",
-  "produktform", "string", "Optional", "Produktform",
-  "branch", "string", "Optional", "Sparte",
-  "exess", "string", "Optional", "Selbstbeteiligung",
-  "vehicleMake", "string", "Optional", "Fahrzeughersteller",
-  "vehicleType", "string", "Optional", "Fahrzeugmodell"
+#parameterTableWithExample(
+(
+  "vehicleReg", "string", "Optional", "Amtliches Kennzeichen des Fahrzeugs", "RV-JB 123",
+  "title", "string", "Pflicht", "Titel Versicherungsnehmer:in", "Prof. Dr.",
+  "firstName", "string", "Pflicht", "Vorname Versicherungsnehmer:in", "Frida",
+  "lastName", "string", "Pflicht", "Name Versicherungsnehmer:in", "Mustermann",
+  "policyNumber", "string", "Pflicht", "Versicherungsnummer", "V-012-345-678-9",
+  "productName", "string", "Optional", "Produktname", "Kfz-Versicherung",
+  "produktform", "string", "Optional", "Produktform", "Kfz Versicherung Mobil Plus",
+  "branch", "string", "Optional", "Sparte", "Kfz Haftpflicht, Kfz Vollkasko, Kfz Teilkasko, Kfz Unfall",
+  "exess", "string", "Optional", "Selbstbeteiligung", "150EUR / 1.000 EUR",
+  "hullService", "string", "Optional", "Kasko-Service", "freie Werkstattwahl (ja /nein)",
+  "coverType", "string", "Optional", "KFV-Deckungsart", "VK ohne Selbstbehalt",
+  "protectiveCover", "boolean","Optional", "Schutzbrief / Verkehrsservice", "(ja / nein)",
+  "ncb", "string", "Optional", "Schadensfreiheitklasse", "SF 19 / 28 %",
+  "vehicleMake", "string", "Optional", "Fahrzeughersteller", "Mercedes-Benz",
+  "vehicleType", "string", "Optional", "Fahrzeugmodell", "C250 D 4 Matic",
+  "vin", "string", "Optional", "Fahrzeug-Identifizierungsnummer", "WDD2051A123456789",
+  "mileage", "string", "Optinal", "Kilometerstand des Fahrzeugs", "15.000",
+  "regDate", "string", "Optional", "Erstzulassung des Fahrzeugs", "21.03.2016",
+  "annualFee", "string", "Optional", "Jahresbruttoprämie", "520,00 EURO",
+  "formOfPayment", "string", "Optional", "Zahlweise", "jährlich",
+  "birthDate", "string", "Optional", "Geburtsdatum", "01.01.1970",
+  "contractManagerName", "string", "Optional", "Vertrasgsbetreuer Name", "Makler Mustermann",
+  "contractManagerPhone", "string", "Optional", "Vertragsbetreuer Telefon", "49301234567",
+  "contractManagerEmail", "string", "Optional",  "Vertragsbetreuer E-Mail", "MaklerMustermann@Makler.de"
   )
 )

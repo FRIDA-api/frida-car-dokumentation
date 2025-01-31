@@ -27,6 +27,12 @@
   )
 }
 
+#let parameterTableWithExample(values) = {
+  customTable((
+    "Attribut", "Typ", "Kondition", "Beschreibung", "Beispielswert"
+  ), values)
+}
+
 #let parameterTableWithoutCondition(values) = {
   customTable(
     ("Attribut", "Typ", "Beschreibung"),

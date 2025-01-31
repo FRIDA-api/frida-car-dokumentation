@@ -1,7 +1,7 @@
 #import "../../../tables.typ": *
-#import "../tables/header-table.typ": *
 #import "../tables/policynumber-paramter-table.typ": *
 #import "../tables/create-claim-body-table.typ": *
+#import "../../../util/attribute.typ": *
 
 == Aktualisierung eines gemeldeten Schadens
 
@@ -21,7 +21,10 @@ Kein Query-Parameter vorhanden.
 
 *Request Header*
 
-#defaultHeaderTable
+#parameterTableWithExample((
+  ..contentTypAttribut,
+  ..acceptAttribut
+))
 
 *Request Body*
 
@@ -35,7 +38,9 @@ Der HTTP-Response Code ist 200.
 
 *Response Header*
 
-#contentTypeHeaderTable
+#parameterTableWithExample(
+  (..contentTypAttribut)
+)
 
 *Response Body*
 
@@ -65,11 +70,11 @@ Content-Type: application/json
   "injuredPerson": "not_specified",
   "injuredPersonNumber": "string",
   "witnessExists": "not_specified",
-  "witnessNumber": "string",
+  "witnessCount": "string",
   "witness": [
     {
       "personalInformation": {
-        "formOfAdress": "no_adress",
+        "formOfAddress": "no_adress",
         "title": "Dr.",
         "lastName": "Johnson",
         "firstName": "Alice",
@@ -78,13 +83,13 @@ Content-Type: application/json
         "streetName": "Germaniastraße",
         "streetNumber": "1b",
         "phoneNumber": "+49(40)321070",
-        "emailAddress": "example@gmail.com"
+        "mail": "example@gmail.com"
       }
     }
   ],
   "vehicleDriver": {
     "personalInformation": {
-      "formOfAdress": "no_adress",
+      "formOfAddress": "no_adress",
       "title": "Dr.",
       "lastName": "Johnson",
       "firstName": "Alice",
@@ -93,7 +98,7 @@ Content-Type: application/json
       "streetName": "Germaniastraße",
       "streetNumber": "1b",
       "phoneNumber": "+49(40)321070",
-      "emailAddress": "example@gmail.com"
+      "mail": "example@gmail.com"
     },
     "driverLicensenumber": "DR123456",
     "licenseIssuedBy": "string",
@@ -115,16 +120,14 @@ Content-Type: application/json
     "driverVisibleDamage": "string",
     "driverComments": "string",
     "vehicleDrivingAbility": "true",
-    "damageCausedBy": [
-      "Auffahren"
-    ],
+    "damageCausedBy": "Auffahren",
     "typeOfWildlife": "Rehwild",
     "certificateForWildlife": "string",
     "garageLocation": "50°56’28.8″N 6°57’30.0"
   },
   "otherVehicleDriver": {
     "personalInformation": {
-      "formOfAdress": "no_adress",
+      "formOfAddress": "no_adress",
       "title": "Dr.",
       "lastName": "Johnson",
       "firstName": "Alice",
@@ -133,7 +136,7 @@ Content-Type: application/json
       "streetName": "Germaniastraße",
       "streetNumber": "1b",
       "phoneNumber": "+49(40)321070",
-      "emailAddress": "example@gmail.com"
+      "mail": "example@gmail.com"
     },
     "driverLicensenumber": "DR123456",
     "licenseIssuedBy": "string",
@@ -155,16 +158,14 @@ Content-Type: application/json
     "driverVisibleDamage": "string",
     "driverComments": "string",
     "vehicleDrivingAbility": "true",
-    "damageCausedBy": [
-      "Auffahren"
-    ],
+    "damageCausedBy": "Auffahren",
     "typeOfWildlife": "Rehwild",
     "certificateForWildlife": "string",
     "garageLocation": "50°56’28.8″N 6°57’30.0"
   },
   "policyholder": {
     "personalInformation": {
-      "formOfAdress": "no_adress",
+      "formOfAddress": "no_adress",
       "title": "Dr.",
       "lastName": "Johnson",
       "firstName": "Alice",
@@ -173,7 +174,7 @@ Content-Type: application/json
       "streetName": "Germaniastraße",
       "streetNumber": "1b",
       "phoneNumber": "+49(40)321070",
-      "emailAddress": "example@gmail.com"
+      "mail": "example@gmail.com"
     },
     "inputTaxDeduction": "not_specified",
     "vehicleMake": "BMW",
@@ -189,7 +190,7 @@ Content-Type: application/json
   },
   "otherPolicyholder": {
     "personalInformation": {
-      "formOfAdress": "no_adress",
+      "formOfAddress": "no_adress",
       "title": "Dr.",
       "lastName": "Johnson",
       "firstName": "Alice",
@@ -198,7 +199,7 @@ Content-Type: application/json
       "streetName": "Germaniastraße",
       "streetNumber": "1b",
       "phoneNumber": "+49(40)321070",
-      "emailAddress": "example@gmail.com"
+      "mail": "example@gmail.com"
     },
     "inputTaxDeduction": "not_specified",
     "vehicleMake": "BMW",
@@ -235,11 +236,11 @@ Content-Type: application/json
   "injuredPerson": "not_specified",
   "injuredPersonNumber": "string",
   "witnessExists": "not_specified",
-  "witnessNumber": "string",
+  "witnessCount": "string",
   "witness": [
     {
       "personalInformation": {
-        "formOfAdress": "no_adress",
+        "formOfAddress": "no_adress",
         "title": "Dr.",
         "lastName": "Johnson",
         "firstName": "Alice",
@@ -248,13 +249,13 @@ Content-Type: application/json
         "streetName": "Germaniastraße",
         "streetNumber": "1b",
         "phoneNumber": "+49(40)321070",
-        "emailAddress": "example@gmail.com"
+        "mail": "example@gmail.com"
       }
     }
   ],
   "vehicleDriver": {
     "personalInformation": {
-      "formOfAdress": "no_adress",
+      "formOfAddress": "no_adress",
       "title": "Dr.",
       "lastName": "Johnson",
       "firstName": "Alice",
@@ -263,7 +264,7 @@ Content-Type: application/json
       "streetName": "Germaniastraße",
       "streetNumber": "1b",
       "phoneNumber": "+49(40)321070",
-      "emailAddress": "example@gmail.com"
+      "mail": "example@gmail.com"
     },
     "driverLicensenumber": "DR123456",
     "licenseIssuedBy": "string",
@@ -285,16 +286,14 @@ Content-Type: application/json
     "driverVisibleDamage": "string",
     "driverComments": "string",
     "vehicleDrivingAbility": "true",
-    "damageCausedBy": [
-      "Auffahren"
-    ],
+    "damageCausedBy": "Auffahren",
     "typeOfWildlife": "Rehwild",
     "certificateForWildlife": "string",
     "garageLocation": "50°56’28.8″N 6°57’30.0"
   },
   "otherVehicleDriver": {
     "personalInformation": {
-      "formOfAdress": "no_adress",
+      "formOfAddress": "no_adress",
       "title": "Dr.",
       "lastName": "Johnson",
       "firstName": "Alice",
@@ -303,7 +302,7 @@ Content-Type: application/json
       "streetName": "Germaniastraße",
       "streetNumber": "1b",
       "phoneNumber": "+49(40)321070",
-      "emailAddress": "example@gmail.com"
+      "mail": "example@gmail.com"
     },
     "driverLicensenumber": "DR123456",
     "licenseIssuedBy": "string",
@@ -325,16 +324,14 @@ Content-Type: application/json
     "driverVisibleDamage": "string",
     "driverComments": "string",
     "vehicleDrivingAbility": "true",
-    "damageCausedBy": [
-      "Auffahren"
-    ],
+    "damageCausedBy": "Auffahren",
     "typeOfWildlife": "Rehwild",
     "certificateForWildlife": "string",
     "garageLocation": "50°56’28.8″N 6°57’30.0"
   },
   "policyholder": {
     "personalInformation": {
-      "formOfAdress": "no_adress",
+      "formOfAddress": "no_adress",
       "title": "Dr.",
       "lastName": "Johnson",
       "firstName": "Alice",
@@ -343,7 +340,7 @@ Content-Type: application/json
       "streetName": "Germaniastraße",
       "streetNumber": "1b",
       "phoneNumber": "+49(40)321070",
-      "emailAddress": "example@gmail.com"
+      "mail": "example@gmail.com"
     },
     "inputTaxDeduction": "not_specified",
     "vehicleMake": "BMW",
@@ -359,7 +356,7 @@ Content-Type: application/json
   },
   "otherPolicyholder": {
     "personalInformation": {
-      "formOfAdress": "no_adress",
+      "formOfAddress": "no_adress",
       "title": "Dr.",
       "lastName": "Johnson",
       "firstName": "Alice",
@@ -368,7 +365,7 @@ Content-Type: application/json
       "streetName": "Germaniastraße",
       "streetNumber": "1b",
       "phoneNumber": "+49(40)321070",
-      "emailAddress": "example@gmail.com"
+      "mail": "example@gmail.com"
     },
     "inputTaxDeduction": "not_specified",
     "vehicleMake": "BMW",

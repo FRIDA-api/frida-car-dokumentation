@@ -1,7 +1,7 @@
 #import "../../../tables.typ": *
-#import "../tables/header-table.typ": *
 #import "../tables/policynumber-paramter-table.typ": *
 #import "../tables/create-claim-body-table.typ": *
+#import "../../../util/attribute.typ": *
 
 == Anforderung eines gemeldeten Schadens
 
@@ -21,7 +21,10 @@ Kein Query-Parameter vorhanden.
 
 *Request Header*
 
-#acceptHeaderTable
+#parameterTableWithExample(
+  (
+  ..acceptAttribut)
+)
 
 *Request Body*
 
@@ -35,7 +38,9 @@ Der HTTP-Response Code ist 200.
 
 *Response Header*
 
-#contentTypeHeaderTable
+#parameterTableWithExample(
+  (..contentTypAttribut)
+)
 
 *Response Body*
 
@@ -68,7 +73,7 @@ Response
   "injuredPerson": "not_specified",
   "injuredPersonNumber": "string",
   "witnessExists": "not_specified",
-  "witnessNumber": "string",
+  "witnessCount": "string",
   "witness": [
     {
       "personalInformation": {
@@ -158,9 +163,7 @@ Response
     "driverVisibleDamage": "string",
     "driverComments": "string",
     "vehicleDrivingAbility": "true",
-    "damageCausedBy": [
-      "Auffahren"
-    ],
+    "damageCausedBy": "Auffahren",
     "typeOfWildlife": "Rehwild",
     "certificateForWildlife": "string",
     "garageLocation": "50°56’28.8″N 6°57’30.0"

@@ -1,5 +1,6 @@
 #import "../../../tables.typ": *
 #import "../tables/pass-api-path-parameter-table.typ": *
+#import "../tables/attribute.typ": *
 
 == Löschung einer digitalen Versicherten-Karte
 
@@ -19,8 +20,8 @@ Kein Query-Parameter vorhanden.
 
 *Request Header*
 
-#parameterTable((
-  "X-API-Key", "string", "Pflicht", "Der API-Key für die Authentifizierung",
+#parameterTableWithExample((
+  ..xApiKeyAttribut,
 ))
 
 *Request Body*
@@ -48,7 +49,7 @@ Request
 ```text
 DELETE https://stoplight.io/mocks/mmpt/api-integration/595935930/projects/581/external-passes/{TEST_VHLC_2022_02_15_01}
 
-X-API-Key: 123
+X-API-Key: JDI241WA4242
 ```
 
 Response
