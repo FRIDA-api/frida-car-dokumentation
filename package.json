@@ -1,0 +1,19 @@
+{
+    "name": "frida-car-dokumentation",
+    "version": "1.0.0",
+    "description": "Ein Typst-Projekt zur Dokumentation der FRIDA CAR-CLAIMS API",
+    "scripts": {
+      "build": "typst compile main.typ frida-car-dokumentation.pdf",
+      "watch": "typst watch main.typ",
+      "clean": "rm -f main.pdf"
+    },
+    "dependencies": {
+      "typst": ">=0.12.0"
+    },
+    "devDependencies": {
+      "typst": ">=0.12.0"
+    },
+    "keywords": ["typst", "dokument", "latex-alternative"],
+    "author": "Benjamin Walter",
+    "license": "MIT"
+  }
