@@ -45,7 +45,7 @@ Der HTTP-Response Code ist 200.
 
 *Response Header*
 
-#parameterTable((
+#parameterTableWithExample((
   ..contentTypAttribut
 ))
 
