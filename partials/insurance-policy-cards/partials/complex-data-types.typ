@@ -23,7 +23,7 @@ Beinhaltet alle nötigen Information zur Verwaltung einer digitalen Versicherten
   "ncb", "string", "Optional", "Schadensfreiheitklasse", "SF 19 / 28 %",
   "vehicleMake", "string", "Optional", "Fahrzeughersteller", "Mercedes-Benz",
   "vehicleType", "string", "Optional", "Fahrzeugmodell", "C250 D 4 Matic",
-  "vin", "string", "Optional", "Fahrzeug-Identifizierungsnummer", "WDD2051A123456789",
+  "vin", "string", "Optional", "Fahrzeug-Identifizierungsnummer", "WDD2051-A123456789",
   "mileage", "string", "Optinal", "Kilometerstand des Fahrzeugs", "15.000",
   "regDate", "string", "Optional", "Erstzulassung des Fahrzeugs", "21.03.2016",
   "annualFee", "string", "Optional", "Jahresbruttoprämie", "520,00 EURO",
@@ -31,6 +31,6 @@ Beinhaltet alle nötigen Information zur Verwaltung einer digitalen Versicherten
   "birthDate", "string", "Optional", "Geburtsdatum", "01.01.1970",
   "contractManagerName", "string", "Optional", "Vertrasgsbetreuer Name", "Makler Mustermann",
   "contractManagerPhone", "string", "Optional", "Vertragsbetreuer Telefon", "49301234567",
-  "contractManagerEmail", "string", "Optional",  "Vertragsbetreuer E-Mail", "MaklerMustermann@Makler.de"
+  "contractManagerEmail", "string", "Optional",  "Vertragsbetreuer E-Mail", "MaklerMustermann-@Makler.de"
   )
 )

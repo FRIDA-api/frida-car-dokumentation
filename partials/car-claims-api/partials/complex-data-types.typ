@@ -53,7 +53,7 @@
 
 #parameterTableWithExample(
   (
-    "personalInformation", [PersonalInformation Objekt @personal-information], "Optional", "Persönliche Informationen des Fahrers", "",
+    "personalInformation", [Persönliche Information Objekt @personal-information], "Optional", "Persönliche Informationen des Fahrers", "",
     "driverLicensenumber", "string", "Optional", "Führerscheinnummer", "string",
     "licenseIssuedBy", "string", "Optional", "Führerschein ausgestellt von", "string",
     "damagedCarImages", "Array von Bildern", "Optional", "Bilder vom Schaden", "null",

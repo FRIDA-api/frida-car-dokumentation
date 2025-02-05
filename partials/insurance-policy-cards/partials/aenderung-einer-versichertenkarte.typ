@@ -1,6 +1,6 @@
 #import "../../../tables.typ": *
-#import "../tables/pass-api-path-parameter-table.typ"
-#import "complex-data-types.typ"
+#import "../tables/pass-api-path-parameter-table.typ": *
+#import "complex-data-types.typ": *
 #import "../tables/response-body-table.typ": *
 #import "../tables/attribute.typ": *
 #import "../../../util/attribute.typ": *

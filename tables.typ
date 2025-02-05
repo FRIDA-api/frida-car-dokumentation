@@ -1,6 +1,6 @@
-#let customTable(headers, values) = { 
+#let customTable(columns, headers, values) = { 
   table(
-    columns: headers.map((header) => (1fr)),
+    columns: columns,
     inset: (bottom: 1em),
     table.header(
       ..headers.map((header) => {
@@ -15,6 +15,7 @@
 
 #let endpunktTable(values) = {
   customTable(
+    (1fr, 1fr, 1fr),
     ("Endpunkt/Ressource", "HTTP-Methode", "Beschreibung"),
     values
   )
@@ -22,19 +23,22 @@
 
 #let parameterTable(values) = {
   customTable(
+    (30%, 20%, 20%, 30%),
     ("Attribut", "Typ", "Kondition", "Beschreibung"),
     values 
   )
 }
 
 #let parameterTableWithExample(values) = {
-  customTable((
-    "Attribut", "Typ", "Kondition", "Beschreibung", "Beispielswert"
+  customTable(
+    (27%, 15%, 12%, 23%, 23%),
+    ("Attribut", "Typ", "Kondition", "Beschreibung", "Beispielswert"
   ), values)
 }
 
 #let parameterTableWithoutCondition(values) = {
   customTable(
+    (1fr, 1fr, 1fr),
     ("Attribut", "Typ", "Beschreibung"),
     values 
   )
