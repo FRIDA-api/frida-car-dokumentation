@@ -16,7 +16,7 @@
   "accidentCity", "string", "Optional", "Stadt des Unfallortes", "Hannover",
   "accidentStreetName", "string", "Optional", "Straßennamen des Unfallortes", "Podbielskistraße",
   "accidentStreetNumber", "string", "Pflicht", "Straßennummer des Unfallortes", "402",
-  "accidentDesription", "string", "Optional", "Unfallbeschreibung", "glatt, und dann mach Auto so, ich mach so, Unfall",
+  "accidentDesription", "string", "Optional", "Unfallbeschreibung", "Das Auto fuhr in das vorausfahrenden Fahrzeug rein.",
   "accidentPoliceNumber", "string", "Pflicht", "Unfallnummer des Polizei", "0511 109-2671",
   "hasVehicleDamage", "string", "Optional", "Gibt es weitere Sachschäden, (ja/nein)?",  booleanWert,
   "propertyDamageDescription", "string", "Optional", "Beschreibung der Sachschäden", "no_information",
